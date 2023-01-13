@@ -44,8 +44,4 @@ const SelectImg = ({ xo, state }) => {
   else {
     return <div >{xo}</div>
   }
-
-
-
-
 };

@@ -1,4 +1,4 @@
-import '../css/App.css';
+import React from 'react';
 import ContainerBox from './ContainerBox'
 
 function App() {

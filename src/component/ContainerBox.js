@@ -19,7 +19,7 @@ export default function ContainerBox() {
     const [count,setCount]=useState(0)
 
     useEffect(()=>{
-       if(count===9){
+       if(count===9 && win.length===0){
         setWin('Draw')
        }
     },[count,win])
@@ -40,14 +40,14 @@ export default function ContainerBox() {
         const p=new Promise((resolve,reject)=>{
 
             setCount(count=>count+1)
-
             if( count){
                 resolve()
             }
         })
       
        await p.then(cheakWinner)
-      
+       
+
 
     };
 
@@ -93,8 +93,9 @@ export default function ContainerBox() {
                     );
                 })}
             </div>
+           
 
-            <h1 style={{ textAlign: "center" }}>Winner :- {win} </h1>
+            <h1 style={{ textAlign: "center" }}>{win.length!==0 ? `Winner :- ${win} `:<span > {xo} turn</span> }</h1>
 <div>
 
 </div>
