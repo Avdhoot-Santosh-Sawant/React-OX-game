@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-XO-game/static/css/main.7be7318e.css",
+    "main.js": "/React-XO-game/static/js/main.816f44c9.js",
+    "index.html": "/React-XO-game/index.html",
+    "main.7be7318e.css.map": "/React-XO-game/static/css/main.7be7318e.css.map",
+    "main.816f44c9.js.map": "/React-XO-game/static/js/main.816f44c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7be7318e.css",
+    "static/js/main.816f44c9.js"
+  ]
+}
