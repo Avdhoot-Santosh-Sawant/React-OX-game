@@ -2,30 +2,43 @@
     width:300px;
     margin:auto;
     position: relative;
-    
+   
     border-collapse: collapse;
     display: grid;
     grid-template-columns: auto auto auto;
     margin-top: 30px;
     margin-bottom: 20px;
+    /* box-shadow: 5px 5px 10px #18f7b9; */
+    border-radius: 20px;
     
+  
 }
 
 #btn{
     display: inline-block;
-    width: 100px;
+    
     background-color: green;
     padding: 10px;
     color: white;
-    font-weight: 500;
+    font-weight: 700;
     border: 1px solid black;
     border-radius: 10px;
-  margin-left: 55%;
-  margin-top: 10px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-transform: capitalize !important;
+    font-size: 18px;
+
+    
+  
    
 }
 
 #h{
     text-align: center;
-    color:red;
+    padding: 5px;
+    color:rgb(11, 248, 62);
+    text-shadow: 4px 4px 2px black;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    background-image: linear-gradient( to right,rgb(23, 207, 240),rgb(101, 57, 223),rgb(136, 136, 185));
 }

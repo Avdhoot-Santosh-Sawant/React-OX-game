@@ -1,4 +1,4 @@
-import React, { useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "../css/ContainerBox.css";
 import XoBox from "./XoBox";
 
@@ -16,13 +16,13 @@ export default function ContainerBox() {
     const [xoState, setXoState] = useState(a);
     const [xo, setXO] = useState("x");
     const [win, setWin] = useState("");
-    const [count,setCount]=useState(0)
+    const [count, setCount] = useState(0)
 
-    useEffect(()=>{
-       if(count===9 && win.length===0){
-        setWin('Draw')
-       }
-    },[count,win])
+    useEffect(() => {
+        if (count === 9 && win.length === 0) {
+            setWin('Draw')
+        }
+    }, [count, win])
 
     const provideValue = async (id, xoValue) => {
         xo === "x" ? setXO("o") : setXO("x");
@@ -37,23 +37,23 @@ export default function ContainerBox() {
         });
 
         setXoState(newState);
-        const p=new Promise((resolve,reject)=>{
+        const p = new Promise((resolve, reject) => {
 
-            setCount(count=>count+1)
-            if( count){
+            setCount(count => count + 1)
+            if (count) {
                 resolve()
             }
         })
-      
-       await p.then(cheakWinner)
-       
+
+        await p.then(cheakWinner)
+
 
 
     };
 
     const cheakWinner = () => {
-    
-        xoState.forEach((v,i) => {
+
+        xoState.forEach((v, i) => {
             if (v[0] === "x" && v[1] === "x" && v[2] === "x") {
                 setWin(" X");
             } else if (v[0] === "o" && v[1] === "o" && v[2] === "o") {
@@ -61,23 +61,20 @@ export default function ContainerBox() {
             }
         });
 
-        
+
     };
 
-    const restart=()=>{
-      window.location.reload()
+    const restart = () => {
+        window.location.reload()
     }
 
-  
+
 
     return (
         <>
             <h1 id="h">OX Game</h1>
 
-            {
-               win && <button id="btn" onClick={restart}>Restart</button>
-            }
-           
+
 
 
             <div className="con">
@@ -93,12 +90,15 @@ export default function ContainerBox() {
                     );
                 })}
             </div>
-           
 
-            <h1 style={{ textAlign: "center" }}>{win.length!==0 ? `Winner :- ${win} `:<span > {xo} turn</span> }</h1>
-<div>
 
-</div>
+            <h1 style={{ textAlign: "center", color: 'white' }}>{win.length !== 0 ? `Winner :- ${win} ` : <span > {xo} turn</span>}</h1>
+
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+                {
+                    win && <button id="btn" onClick={restart}>Restart</button>
+                }
+            </div>
         </>
     );
 }
