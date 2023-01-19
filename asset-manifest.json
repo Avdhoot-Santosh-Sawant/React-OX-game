@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/React-OX-game/static/css/main.7be7318e.css",
-    "main.js": "/React-OX-game/static/js/main.816f44c9.js",
+    "main.css": "/React-OX-game/static/css/main.4cfcfe3a.css",
+    "main.js": "/React-OX-game/static/js/main.47ff3aa2.js",
     "index.html": "/React-OX-game/index.html",
-    "main.7be7318e.css.map": "/React-OX-game/static/css/main.7be7318e.css.map",
-    "main.816f44c9.js.map": "/React-OX-game/static/js/main.816f44c9.js.map"
+    "main.4cfcfe3a.css.map": "/React-OX-game/static/css/main.4cfcfe3a.css.map",
+    "main.47ff3aa2.js.map": "/React-OX-game/static/js/main.47ff3aa2.js.map"
   },
   "entrypoints": [
-    "static/css/main.7be7318e.css",
-    "static/js/main.816f44c9.js"
+    "static/css/main.4cfcfe3a.css",
+    "static/js/main.47ff3aa2.js"
   ]
 }
