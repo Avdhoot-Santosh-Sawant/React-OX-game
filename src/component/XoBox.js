@@ -45,3 +45,7 @@ const SelectImg = ({ xo, state }) => {
     return <div >{xo}</div>
   }
 };
+
+
+
+

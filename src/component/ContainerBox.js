@@ -72,7 +72,15 @@ export default function ContainerBox() {
 
     return (
         <>
-            <h1 id="h">OX Game</h1>
+            <div id='header'>
+                <h1 id="h">OX Game</h1>
+                <span id="linkedin">
+                    <a href="https://www.linkedin.com/in/avdhoot-sawant-44259025b/" target={'_blank'} rel="noreferrer"><img alt=".in" src={'/images/linkedin.png'} width={'15px'} />
+                    </a>
+                </span>
+            </div>
+
+
 
 
 
