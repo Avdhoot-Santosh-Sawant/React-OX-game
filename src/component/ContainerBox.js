@@ -75,7 +75,7 @@ export default function ContainerBox() {
             <div id='header'>
                 <h1 id="h">OX Game</h1>
                 <span id="linkedin">
-                    <a href="https://www.linkedin.com/in/avdhoot-sawant-44259025b/" target={'_blank'} rel="noreferrer"><img alt=".in" src={'/images/linkedin.png'} width={'15px'} />
+                    <a href="https://www.linkedin.com/in/avdhoot-sawant-44259025b/" target={'_blank'} rel="noreferrer"><img alt=".in" src={'./linkedin.png'} width={'15px'} />
                     </a>
                 </span>
             </div>

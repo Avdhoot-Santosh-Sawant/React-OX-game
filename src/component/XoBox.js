@@ -36,9 +36,9 @@ const SelectImg = ({ xo, state }) => {
 
   if (state.length !== 0) {
     if (xo === "x") {
-      return <img alt=".x" src={'/images/ximg.png'} width={'100%'} />
+      return <img alt=".x" src={'./ximg.png'} width={'100%'} />
     } else {
-      return <img alt=".o" src={'/images/oimg.png'} width={"100%"} />;
+      return <img alt=".o" src={'./oimg.png'} width={"100%"} />;
     }
   }
   else {
